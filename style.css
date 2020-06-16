@@ -1,0 +1,147 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(/fonts/OpenSans-Regular.woff) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@@font-face {
+  font-family: OpenSans-Bold;
+  src: url(/fonts/OpenSans-Bold.woff) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header {
+  background-image: url(/Images/football_767.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color:#090c35;
+
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+
+  background-color: #090c35;
+  opacity: 0.9;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logotype {
+  fill: #ffffff;
+  width: 33.3%;
+
+  margin-top: 6%;
+  left: 33.3%;
+
+  position: relative;
+  z-index: 10;
+}
+
+.main-header {
+  position: relative;
+  z-index: 10;
+
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  margin-top: 33.3%;
+
+  align-self: center;
+}
+
+.recruit , .sport {
+  font-family: OpenSans-Bold;
+  font-style: normal;
+  font-size: 28px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+  color: #ffffff;
+}
+
+.sport {
+margin-left: 16%;
+}
+
+.button-market {
+  margin-top: 40%;
+  margin-bottom: 20%;
+}
+
+ .market {
+   width: 87%;
+   height: 2.4rem;
+   margin-left: 6.25%;
+   margin-right: 6.25%;
+
+   background-color: #5e42b0;
+   border-radius: 2.4rem;
+
+   position: relative;
+   z-index: 10;
+
+   border: none;
+   outline: none;
+
+ }
+
+ .button-block:nth-child(2) {
+   margin-top: 1rem;
+
+ }
+
+
+ .apple , .google {
+   font-size: 8px;
+   margin-left: auto;
+   margin-right: auto;
+
+   display: flex;
+   flex-direction: row;
+ }
+
+ .app_store  , .play-market {
+   fill: #ffffff;
+   width: 2.5em;
+   margin-right: 1.5em;
+ }
+
+ .download_button {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+ }
+
+ .store_download {
+   text-decoration: none;
+ }
+
+ .download {
+   font-size: 8px;
+   font-family: OpenSans-Regular;
+   font-style: normal;
+   color: #ffffff;
+   text-transform: uppercase;
+   text-decoration: none;
+ }
+
+ .store {
+   font-size: 8px;
+   font-family: OpenSans-Bold;
+   font-style: normal;
+   color: #ffffff;
+   text-transform: uppercase;
+   text-decoration: none;
+ }
