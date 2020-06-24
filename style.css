@@ -1,12 +1,12 @@
 @font-face {
   font-family: OpenSans-Regular;
-  src: url(https://github.com/KrisStrat/Diplom_adaptive/blob/master/fonts/OpenSans-Regular.ttf) format("opentype");
+  src: url(fonts/OpenSans-Regular.ttf) format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: OpenSans-Bold;
-  src: url(https://github.com/KrisStrat/Diplom_adaptive/blob/master/fonts/OpenSans-Bold.ttf) format("opentype");
+  src: url(fonts/OpenSans-Bold.ttf) format("opentype");
   font-style: normal;
   font-weight: normal;
 }
@@ -19,12 +19,13 @@ body {
 .header {
   background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/football_767.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-color:#090c35;
 
   position: relative;
 
-  height: 100%;
+  height: 177.5vw;
   width: 100%;
 
   display: flex;
@@ -46,10 +47,10 @@ body {
 
 .logotype {
   fill: #ffffff;
-  width: 33.3vw;
+  width: 41.8vw;
 
   margin-top: 10vw;
-  left: 33.3vw;
+  left: 29vw;
 
   position: relative;
   z-index: 10;
@@ -59,8 +60,8 @@ body {
   position: relative;
   z-index: 10;
 
-  margin-left: 6.25%;
-  margin-right: 6.25%;
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
   margin-top: 33.3%;
 
   align-self: center;
@@ -69,7 +70,7 @@ body {
 .recruit , .sport {
   font-family: OpenSans-Bold;
   font-style: normal;
-  font-size: 28px;
+  font-size: 8.75vw;
   text-transform: uppercase;
   position: relative;
   z-index: 10;
@@ -77,22 +78,22 @@ body {
 }
 
 .sport {
-margin-left: 16%;
+margin-left: 16vw;
 }
 
 .button-market {
-    margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
  .market {
-   width: 87%;
-   height: 2.4rem;
-   margin-left: 6.25%;
-   margin-right: 6.25%;
+   width: 87vw;
+   height: 12vw;
+   margin-left: 6.25vw;
+   margin-right: 6.25vw;
 
    background-color: #5e42b0;
-   border-radius: 2.4rem;
+   border-radius: 12vw;
 
    position: relative;
    z-index: 10;
@@ -100,31 +101,32 @@ margin-left: 16%;
    border: none;
    outline: none;
 
+   display: flex;
+   flex-wrap: wrap;
+
  }
 
  .button-block:nth-child(2) {
-   margin-top: 1rem;
+   margin-top: 4.4vw;
 
  }
 
 
  .apple , .google {
-   font-size: 8px;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 26.25vw;
 
  }
 
  .app_store  , .play-market {
    fill: #ffffff;
-   width: 2.5em;
-   margin-right: 1.5em;
+   width: 6.25vw;
  }
 
  .download_button {
    display: flex;
    flex-direction: column;
    text-align: left;
+   margin-left: 2vw;
  }
 
  .store_download {
@@ -132,7 +134,7 @@ margin-left: 16%;
  }
 
  .download {
-   font-size: 8px;
+   font-size: 2.5vw;
    font-family: OpenSans-Regular;
    font-style: normal;
    color: #ffffff;
@@ -142,7 +144,7 @@ margin-left: 16%;
  }
 
  .store {
-   font-size: 8px;
+   font-size: 2.5vw;
    font-family: OpenSans-Bold;
    font-style: bold;
    color: #ffffff;
@@ -152,12 +154,12 @@ margin-left: 16%;
  }
 
 .sports_header {
-  font-size: 50px;
+  font-size: 15.6vw;
   font-family: OpenSans-Bold;
   color: #e7e7e7;
   text-transform: uppercase;
   font-style: normal;
-  margin-left: 6.25%;
+  margin-left: 6.25vw;
 }
 
 .sportsman {
@@ -168,21 +170,21 @@ margin-left: 16%;
 .footballer {
   position: absolute;
   display: block;
-  width: 60%;
+  top: 37vw;
   left: calc(50% - 96px);
   z-index: 10;
 
 }
 
 
-.connection , .collaboration , .growth_athlets , .growth_players {
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+.connection , .collaboration , .collaboration_players , .connection_players , .growth_athlets , .growth_players {
+  padding-left: 6.25vw;
+  padding-right: 6.25vw;
   display: flex;
-  flex-wrap:wrap;
+  flex-direction: column;
 }
 
-.connection {
+.connection , .connection_players {
   margin-top: 85vw;
   min-height: 66.25vw;
   background-color: #fafafa;
@@ -192,7 +194,7 @@ margin-left: 16%;
 .article_header {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20%;
+  margin-top: 20vw;
   alighn-items: base-line;
 
 }
@@ -201,29 +203,30 @@ margin-left: 16%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 1.6rem;
+  margin-right: 8vw;
 
 
 }
 
 .number {
-  font-size: 14px;
+  font-size: 4.4vw;
   font-family: OpenSans-Bold;
   margin-left: 6.25%;
   color: #000000;
+
 }
 
 .decor {
-  width: 1.1rem;
-  height: 4px;
+  width: 5.5vw;
+  height: 1.25vw;
   background-color: #5e42b0;
-  border-radius: 2px;
-  margin-top: 0.3rem;
+  border-radius: 0.6vw;
+  margin-top: 1.5vw;
 }
 
 .secondary_header {
   font-family: OpenSans-Bold;
-  font-size: 24px;
+  font-size: 7.5vw;
   text-transform: uppercase;
   display: block;
   margin-top: 0;
@@ -232,32 +235,32 @@ margin-left: 16%;
 
 .content {
   font-family: OpenSans-Regular;
-  font-size: 15px;
+  font-size: 4.6vw;
   text-align: left;
   margin-bottom: 3em;
 }
 
-.collaboration {
+.collaboration , .collaboration_players {
   min-height: 12rem;
   background-color: #f5f4f9;
 }
 
 .growth_athlets {
-  min-height: 12rem;
+  min-height: 22.5vw;
   background-color: #5e42b0;
 }
 
 .decor_growth {
-  width: 1.1rem;
-  height: 4px;
+  width: 5.5vw;
+  height: 1.25vw;
   background-color: #ffffff;
-  border-radius: 2px;
-  margin-top: 0.3rem;
+  border-radius: 0.6vw;
+  margin-top: 1.5vw;
 }
 
 .content_growth {
   font-family: OpenSans-Regular;
-  font-size: 15px;
+  font-size: 4.6vw;
   text-align: left;
   color: #ffffff;
   margin-bottom: 3em;
@@ -265,12 +268,12 @@ margin-left: 16%;
 }
 
 .growth_players {
-  min-height: 12rem;
+  min-height: 3.75vw;
   background-color: #090c35;
 }
 
 .number_growth {
-  font-size: 14px;
+  font-size: 4.4vw;
   font-family: OpenSans-Bold;
   margin-left: 6.25%;
   color: #8765dd;
@@ -327,36 +330,36 @@ margin-left: 16%;
 }
 
 .number_class {
-  font-size: 14px;
+  font-size: 4.4vw;
   font-family: OpenSans-Bold;
   color: #ffffff;
 }
 
 .decor_class {
-  width: 1.1rem;
-  height: 4px;
+  width: 5.5vw;
+  height: 1.25vw;
   background-color: #8f7bc8;
-  border-radius: 2px;
-  margin-top: 0.3rem;
+  border-radius: 0.6vw;
+  margin-top: 1.5vw;
 }
 
 .be_active_description {
-  margin-left: 6.25%;
-  margin-right: 6.25%;
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
   margin-bottom: 26.2vw;
 }
 
 .be_active_header {
-  margin-top: 2.1rem;
+  margin-top: 10.5vw;
   font-family: OpenSans-Bold;
-  font-size: 28px;
+  font-size: 8.75vw;
   color: #e7e7e7;
   text-transform: uppercase;
 }
 
 .description {
   font-family: OpenSans-Regular;
-  font-size: 16px;
+  font-size: 5vw;
   color: black;
   text-align: left;
 }
@@ -364,13 +367,12 @@ margin-left: 16%;
 .footer {
   background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/game_767.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-color:#090c35;
 
   position: relative;
 
-  height: 100%;
-  width: 100%;
+  height: 177.5vw;
 
   display: flex;
   flex-direction: column;
@@ -387,4 +389,596 @@ margin-left: 16%;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.emblem {
+  width: 24.5vw;
+  height: 24.5vw;
+
+  background-color: #6b4cc5;
+  border-radius: 5vw;
+
+  display: flex;
+  position: absolute;
+  z-index: 10;
+
+  left: 37.75vw;
+  top: 30.6vw;
+
+}
+
+.emblem_svg {
+  fill: #ffffff;
+  self-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 15.3vw;
+}
+
+.title {
+  position: absolute;
+  z-index: 10;
+  top: 70.74vw;
+  left: 6.25vw;
+
+}
+
+.footer_header {
+  color: #ffffff;
+  font-family: OpenSans-Bold;
+  font-size: 10vw;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.show {
+  color: #8378a7;
+  font-family: OpenSans-Regular;
+  font-size: 4.3vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-button-market {
+  margin-top: 110.5vw;
+}
+
+.logo_svg {
+  fill: white;
+  width: 41.8vw;
+  position: absolute;
+  z-index: 10;
+  left: 29vw;
+  bottom: 3vw;
+}
+
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+  body {
+    max-width: 100vw;
+  }
+
+  .header {
+    background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/football_1280.jpg);
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+  }
+
+  .main-header {
+    margin-left: 10.5vw;
+    margin-right: 10.5vw;
+    margin-top: 25vw;
+  }
+
+  .recruit , .sport {
+    font-size: 7vw;
+  }
+
+  .button-market {
+    margin-top: 25vw;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .market {
+    width: 38vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .button-block:nth-child(2) {
+    margin-top: 0;
+    margin-left: 3vw;
+  }
+
+  .apple , .google {
+    margin-left: 5vw;
+  }
+
+  .download_button {
+    margin-left: 3vw;
+    self-align: center;
+  }
+
+  .app_store , .play-market {
+    width: 5.2vw;
+  }
+
+  .download , .store {
+    font-size: 1.8vw;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .football , .basketball {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 100vw;
+  }
+
+
+  .footballer {
+    left: -20%;
+    bottom: 50%;
+  }
+
+
+  .connection , .collaboration , .growth_athlets , .growth_players {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .connection {
+    margin-top: 0;
+    min-height: 25vw;
+    background-color: white;
+  }
+
+  .collaboration {
+    min-height: 30vw;
+  }
+
+  .connection_athlets , .collaboration_athlets , .growth_athlets {
+    padding-left: 40vw;
+    padding-right: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .connection_players , .collaboration_players , .growth_players {
+    padding-left: 6.25vw;
+    padding-right: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .article_header {
+    margin-top: 5vw;
+  }
+
+  .sports_header {
+    font-size: 10vw;
+  }
+
+  .athlete {
+    padding-left: 40vw;
+    margin-left: 0;
+  }
+
+  .secondary_header {
+    font-size: 4vw;
+  }
+
+  .content , .content_growth {
+    font-size: 2vw;
+    max-width: 57.7vw;
+  }
+
+  .number_container {
+    margin-right: 2vw;
+  }
+
+  .number , .number_growth {
+    font-size: 2vw;
+  }
+
+  .decor , .decor_growth {
+    width: 3vw;
+  }
+
+  .basketballer {
+    right: 0;
+    top: 15%;
+    left: 48%;
+  }
+
+  .be_active_block {
+    max-width: 100vw;
+  }
+
+  .be_active_img , .find_contact_img , .work_it_img {
+    height: 70vw;
+  }
+
+  .be_active_img {
+    background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/be-active_960.jpg);
+  }
+
+  .find_contact_img {
+    background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/find-contact_960.jpg);
+  }
+
+  .work_it_img {
+    background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/work-it_960.jpg);
+  }
+
+  .number_block {
+    top: 54vw;
+  }
+
+  .be_active_header {
+    font-size: 10vw;
+  }
+
+  .description {
+    font-size: 3vw;
+  }
+
+  .footer {
+    background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/game_1280.jpg);
+    height: 135vw;
+  }
+
+  .footer-button-market {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 98vw;
+
+  }
+
+  .emblem {
+    width: 20vw;
+    height: 20vw;
+    top: 20vw;
+    left: 40vw;
+  }
+
+  .title {
+    top: 50vw;
+    left: 7vw;
+  }
+
+}
+
+
+@media (min-width:961px) {
+body {
+  min-width: 961px;
+}
+
+  .header {
+    background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/football_1920.jpg);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .logotype {
+    width: 15vw;
+    left: 42.5vw;
+    margin-top: 2vw;
+
+  }
+
+  .main-header {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 25vh;
+  }
+
+  .recruit , .sport {
+    font-size: 4.7vw;
+    line-height: 5vw;
+  }
+
+  .sport {
+    margin-left: 24vw;
+  }
+
+  .button-market {
+    margin-top: 10vh;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .market {
+    width: 15.6vw;
+    height: 4vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .button-block:nth-child(2) {
+    margin-top: 0;
+    margin-left: 3vw;
+  }
+
+  .apple , .google {
+    margin-left: 2vw;
+  }
+
+  .download_button {
+    margin-left: 1.5vw;
+    self-align: center;
+  }
+
+  .app_store , .play-market {
+    width: 1.6vw;
+  }
+
+  .download , .store {
+    font-size: 0.7vw;
+  }
+
+  main {
+    max-width: 100vw;
+  }
+
+  .football , .basketball {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 100vw;
+  }
+
+
+  .footballer {
+    left: 10%;
+    top: 8%;
+  }
+
+
+  .connection , .collaboration , .growth_athlets , .growth_players {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .connection {
+    margin-top: 0;
+    min-height: 25vh;
+    background-color: white;
+  }
+
+  .collaboration {
+    min-height: 30vh;
+  }
+
+  .connection_athlets , .collaboration_athlets , .growth_athlets {
+    padding-left: 52.2vw;
+    padding-right: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .connection_players , .collaboration_players , .growth_players {
+    padding-left: 10vw;
+    padding-right: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .growth_athlets , .growth_players {
+    min-height: 20vh;
+  }
+
+  .article_header {
+    margin-top: 5vw;
+  }
+
+  .sports_header {
+    font-size: 4vw;
+  }
+
+  .athlete {
+    padding-left: 52.2vw;
+    margin-left: 0;
+  }
+
+  .players {
+    margin-left: 10vw;
+  }
+
+  .secondary_header {
+    font-size: 2vw;
+  }
+
+  .content , .content_growth {
+    font-size: 1vw;
+    max-width: 37.3vw;
+  }
+
+  .number_container {
+    margin-right: 2vw;
+  }
+
+  .number , .number_growth {
+    font-size: 1vw;
+  }
+
+  .decor , .decor_growth {
+    width: 1vw;
+    height: 0.3vw;
+    margin-top: 0.5vw;
+  }
+
+  .basketballer {
+    top: -5%;
+    right: 10%;
+  }
+
+.be_active_block {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.be_active_img , .find_contact_img , .work_it_img {
+  min-width: 50vw;
+  height: 38.1vw;
+  background-size: cover;
+}
+
+.be_active_img {
+  background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/be-active_1024.jpg);
+}
+
+.find_contact_img {
+  background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/find-contact_1024.jpg);
+  order: 2;
+}
+
+.work_it_img {
+  background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/work-it_1024.jpg);
+}
+
+.be_active_description {
+  min-width: 50vw;
+  height: 38.1vw;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin: 0;
+}
+
+.be_active_header {
+  font-size: 4vw;
+  margin-left: 7vw;
+  margin-top: 13vw;
+  margin-right: 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+.description {
+  font-size: 1.25vw;
+  margin-left: 7vw;
+  display: block;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.number_block {
+  width: 9vw;
+  height: 8vw;
+  left: 41vw;
+  top: 11vw;
+}
+
+.number_class {
+  font-size: 1.25vw;
+}
+
+.decor_class {
+  width: 1vw;
+  height: 0.3vw;
+  margin-top: 0.5vw;
+
+}
+
+.footer {
+  background-image: url(https://raw.githubusercontent.com/KrisStrat/Diplom_adaptive/master/Images/game_1920.jpg);
+  height: 100vh;
+  width: 100vw;
+}
+
+.footer_store {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 22vh;
+  margin-left: 30vw;
+  align-items: baseline;
+}
+
+.footer-button-market {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30vh;
+
+}
+
+ .emblem {
+  width: 6.9vw;
+  height: 6.9vw;
+  top: 0;
+  left: 0;
+  border-radius: 1.25vw;
+  align-self: center;
+  margin-top: 3vw;
+}
+
+ .emblem_svg {
+  width: 5.5vw;
+}
+
+ .title {
+  top: 0;
+  left: 0;
+  text-align: left;
+  margin-left: 8.9vw;
+  margin-top: 0;
+}
+
+ .footer_header {
+  font-size: 4vw;
+  text-align: left;
+  line-height: 3vw;
+}
+
+ .show {
+  font-size: 1.5vw;
+  text-align: left;
+  margin-top: 0;
+  line-height: 1.5vw;
+}
+
+ .logo_svg {
+  width: 10vw;
+  left: 45vw;
+  bottom: 5vh;
+}
+
 }
